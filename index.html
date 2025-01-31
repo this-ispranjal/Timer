@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toastmaster Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Side: Individual Timers and Warning Section -->
+      <div class="left-section">
+        <h1>Individual Timers</h1>
+        <div class="timers">
+          <!-- Individual Timer Template -->
+          <div class="timer">
+            <label for="tmod">TMOD (Minutes):</label>
+            <input
+              type="number"
+              id="tmod"
+              class="time-input"
+              min="1"
+              value="5"
+            />
+            <input
+              type="checkbox"
+              id="tmod-checkbox"
+              class="timer-checkbox"
+              name="timer"
+            />
+          </div>
+          <div class="timer">
+            <label for="grammarian">Grammarian (Minutes):</label>
+            <input
+              type="number"
+              id="grammarian"
+              class="time-input"
+              min="1"
+              value="3"
+            />
+            <input
+              type="checkbox"
+              id="grammarian-checkbox"
+              class="timer-checkbox"
+              name="timer"
+            />
+          </div>
+          <div class="timer">
+            <label for="pre-speech">Pre-Speech (Minutes):</label>
+            <input
+              type="number"
+              id="pre-speech"
+              class="time-input"
+              min="1"
+              value="2"
+            />
+            <input
+              type="checkbox"
+              id="pre-speech-checkbox"
+              class="timer-checkbox"
+              name="timer"
+            />
+          </div>
+          <div class="timer">
+            <label for="table-topic">Table Topic Master (Minutes):</label>
+            <input
+              type="number"
+              id="table-topic"
+              class="time-input"
+              min="1"
+              value="4"
+            />
+            <input
+              type="checkbox"
+              id="table-topic-checkbox"
+              class="timer-checkbox"
+              name="timer"
+            />
+          </div>
+          <div class="timer">
+            <label for="general-evaluator">General Evaluator (Minutes):</label>
+            <input
+              type="number"
+              id="general-evaluator"
+              class="time-input"
+              min="1"
+              value="5"
+            />
+            <input
+              type="checkbox"
+              id="general-evaluator-checkbox"
+              class="timer-checkbox"
+              name="timer"
+            />
+          </div>
+          <div class="timer">
+            <label for="evaluator">Evaluator (Minutes):</label>
+            <input
+              type="number"
+              id="evaluator"
+              class="time-input"
+              min="1"
+              value="3"
+            />
+            <input
+              type="checkbox"
+              id="evaluator-checkbox"
+              class="timer-checkbox"
+              name="timer"
+            />
+          </div>
+          <div class="timer">
+            <label for="ahh-counter">Ahh Counter (Minutes):</label>
+            <input
+              type="number"
+              id="ahh-counter"
+              class="time-input"
+              min="1"
+              value="2"
+            />
+            <input
+              type="checkbox"
+              id="ahh-counter-checkbox"
+              class="timer-checkbox"
+              name="timer"
+            />
+          </div>
+        </div>
+
+        <!-- Warning Timer Section -->
+        <div class="warning-section">
+          <h2>Warning Timer</h2>
+          <div class="warning-timeline">
+            <div>Green Light: <span id="green-time">0:00</span></div>
+            <div>Yellow Light: <span id="yellow-time">0:00</span></div>
+            <div>Red Light: <span id="red-time">0:00</span></div>
+            <div>
+              Disqualification: <span id="disqualification-time">0:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Timer Clock and Buttons -->
+      <div class="right-section">
+        <div class="timer-clock">
+          <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <div class="buttons">
+          <button id="start-button" disabled>Start Timer</button>
+          <button id="stop-button" disabled>Stop Timer</button>
+          <button id="reset-button">Reset Timer</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
